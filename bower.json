@@ -1,0 +1,29 @@
+{
+  "name": "react-flux-basic",
+  "description": "Basic app using React's Flux in ES6.",
+  "main": "dist/bundle.js",
+  "authors": [
+    "Davi Alves"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "flux",
+    "es6"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
