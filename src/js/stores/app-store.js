@@ -16,7 +16,7 @@ for (let i = 0; i < 9; i++) {
   });
 };
 
-var cartItems = [];
+var _cartItems = [];
 
 const _removeItem = (item) => _cartItems.splice(_cartItems.findIndex(i => i === item), 1);
 const _findCartItem = (item) => _cartItems.find(_i => _i.id === item.id);
@@ -86,7 +86,7 @@ const AppStore = Object.assign(EventEmitter.prototype, {
         break;
     }
 
-    AppStore.emmitChange();
+    AppStore.emitChange();
   })
 });
 

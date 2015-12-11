@@ -11,7 +11,7 @@ export default {
   increaseItem(item) {
     dispatch({actionType: AppConstants.INCREASE_ITEM, item});
   },
-  descreaseItem(item) {
+  decreaseItem(item) {
     dispatch({actionType: AppConstants.DECREASE_ITEM, item});
   },
 }
