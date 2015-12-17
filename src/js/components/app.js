@@ -1,16 +1,19 @@
 import React from 'react';
+import {Router, Route, IndexRoute} from 'react-router';
 
-import AppActions from '../actions/app-actions';
-import Catalog from './app-catalog';
-import Cart from './app-cart';
+import Template from './app-template';
+import Catalog from './catalog/app-catalog';
+import CatalogDetail from './product/app-catalog-detail';
+import Cart from './cart/app-cart';
 
-export default class App extends React.Component {
-  render() {
-    return(
-      <div className="container">
-        <Catalog/>
-        <Cart />
-      </div>
-    );
-  }
+export default () => {
+  return(
+    <Router>
+      <Route path="/" component={Template}>
+        <IndexRoute component={Catalog} />
+        <Route path="cart" component={Cart} />
+        <Route path="item/:item" component={CatalogDetail} />
+      </Route>
+    </Router>
+  );
 }

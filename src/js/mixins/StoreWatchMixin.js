@@ -14,7 +14,7 @@ export default (InnerComponent, stateCallback) => class extends React.Component 
     }
 
     componentWillUnmount() {
-      AppStore.addChangeListener(this._onChange);
+      AppStore.removeChangeListener(this._onChange);
     }
 
     _onChange() {

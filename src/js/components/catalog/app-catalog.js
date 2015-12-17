@@ -1,7 +1,7 @@
 import React from 'react';
 
-import StoreWatchMixin from '../mixins/StoreWatchMixin';
-import AppStore from '../stores/app-store';
+import StoreWatchMixin from '../../mixins/StoreWatchMixin';
+import AppStore from '../../stores/app-store';
 import CatalogItem from './app-catalog-item';
 
 function getCatalog () {
